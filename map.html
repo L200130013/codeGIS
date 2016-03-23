@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>MAP FKI UMS</title>
+     
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+ (function() {
+   window.onload = function() {
+     //google maps GIS by Bangkit Sanyoto
+//dibuat tanggal 8 Maret 2016
+  // membuat map berdasarkan div id untuk map
+  var mapDiv = document.getElementById('map');
+   
+  // penentuan longitude 
+  var latlng = new google.maps.LatLng(-7.556883, 110.771115);
+   
+  // konfigurasi untuk maps api
+  var options = {
+    center: latlng,
+    zoom: 25,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+   
+  // membuat imagenya berdasarkan divnya
+  var map = new google.maps.Map(mapDiv, options);
+   }
+ })();
+ </script>
+ <style type="text/css">
+ body {
+   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+   font-size: small;
+   background: #fff;
+ }
+ #map {
+   width: 100%;
+   height: 500px;
+   border: 1px solid #000;
+ }
+ </style>
+  </head>
+  <body>
+    <h1>MAP FKI UMS</h1>
+    <div id="map"></div>
+  </body>
+</html>
